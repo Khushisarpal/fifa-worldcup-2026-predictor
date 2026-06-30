@@ -26,15 +26,12 @@ pip install pandas numpy scipy scikit-learn xgboost openpyxl
 python wc2026_predictor.py
 ```
  
-You'll need:
-- `data/results.csv` — historical match results (Kaggle international football dataset works)
+Inputs:
+- `data/results.csv` — historical match results
 - `data/live data.xlsx` — actual 2026 World Cup results as they're played
-- `data/squad_strength.csv` *(optional)* — squad value/caps data, improves predictions if you have it
 Outputs land in `/output`:
 - `wc2026_predictions.csv` — every team's probability of reaching semis/final/winning
-- `group_stage_predictions.csv` — match-by-match predictions for the group stage
 - `elo_ratings.csv` — full Elo leaderboard
-Set `N_SIM=20000` as an environment variable if you want more simulations (slower, slightly more stable numbers). Set `FORCE_REFIT=1` if you've changed the data and want the models to retrain from scratch instead of using cached versions.
  
 ## What's next
  
