@@ -29,7 +29,7 @@ python wc2026_predictor.py
 Inputs:
 - `data/results.csv` — historical match results
 - `data/live data.xlsx` — actual 2026 World Cup results as they're played
-Outputs land in `/output`:
+/Outputs land in `/output`:
 - `wc2026_predictions.csv` — every team's probability of reaching semis/final/winning
 - `elo_ratings.csv` — full Elo leaderboard
  
